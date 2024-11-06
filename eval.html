@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="firstinput">
+    <input type="number" id="secondinput">
+    <input type="number" id="thirdinput">
+    <button id="add">add</button>
+    <button id="subtract">subtract</button>
+    <button id="multiply">multiply</button>
+    <button id="division">division</button>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+        const three=document.getElementById("firstinput");
+        const four=document.getElementById("secondinput");
+        const five=document.getElementById("thirdinput");
+const btnadd = document.getElementById("add");
+const multiply=document.getElementById("multiply");
+const subtract=document.getElementById("subtract");
+const division=document.getElementById("division");
+const result = document.getElementById("result");
+btnadd.addEventListener("click",function(){
+    result.textContent= eval(parseFloat(firstinput.value) + parseFloat(secondinput.value) + parseFloat(thirdinput.value));
+    });
+    multiply.addEventListener("click",function(){
+    result.textContent= eval(parseFloat(firstinput.value) * parseFloat(secondinput.value) * parseFloat(thirdinput.value));
+    });
+    subtract.addEventListener("click",function(){
+    result.textContent= eval(parseFloat(firstinput.value) - parseFloat(secondinput.value) - parseFloat(thirdinput.value));
+    });
+    division.addEventListener("click",function(){
+    result.textContent= eval(parseFloat(firstinput.value) / parseFloat(secondinput.value) / parseFloat(thirdinput.value));
+    });
+</script>
